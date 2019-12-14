@@ -1,0 +1,30 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+header{
+    text-align: center;
+}
+
+nav ul{
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+article{
+    text-align: center;
+}
+
+table {
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}

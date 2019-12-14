@@ -1,20 +1,113 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("#div1").load("demo_test.txt");
-  });
-});
-</script>
-</head>
+<html lang="en">
+
+<header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.js">
+
+  <title>Weather App</title>
+</header>
+
 <body>
+  <Head>
+    <h2>Weather App</h2>
+  </Head>
 
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<div class="container">
+<div class="row" style="margin-bottom: 20px;">
+  <h3 class="text-center text-primary">Enter City Name</h3>
+  <span id="error"></span>
 
-<button>Get External Content</button>
+</div>
+
+
+<div class="container">
+<div class="row form-group form-inline id=rowDiv">
+ <input type="text" name="city" class="form-control" placeholder="City Name">
+ <button id="submitWeather" class="=btn bt-primary">Search City</button>
+
+</div>
+<div id="show"></div>
+
+</div>
+
+
+
+
+
+ 
+    <article>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <h2>City</h2>
+            </th>
+
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr>
+            <td>city</td>
+            <td><a><input id="myInput" type="text" placeholder="Search.."></a></td>
+
+          </tr>
+          <tr>
+            <td>Temp</td>
+            <td>date box</td>
+
+          </tr>
+          <tr>
+            <td>Humidity</td>
+            <td>date box</td>
+
+          </tr>
+          <tr>
+            <td>Wind</td>
+            <td>datebox</td>
+
+          </tr>
+          <tr>
+            <td>UV Index</td>
+            <td>date box</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+      </br>
+      <h2>5 Day Forcast</h2>
+      <ul style="list-style-type:none;">
+        <li>day1</li>
+        <li>day2</li>
+        <li>day3</li>
+        <li>day4</li>
+        <li>day5</li>
+
+    </article>
+
+
+
+  </section>
+</br>
+  <footer>
+    <p>Have a great weather day</p>
+  </footer>
+
+<script src="weather.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
