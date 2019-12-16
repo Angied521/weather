@@ -1,6 +1,3 @@
-{
-    box-sizing: border-box;
-}
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -11,20 +8,27 @@ header{
     text-align: center;
 }
 
-nav ul{
-    float: left;
-    width: 30%;
-    padding: 20px;
+input[type="text"]{
+    height:40px;
+    font-size: 20px;
 }
-
-article{
+#rowDiv{
+    margin: auto;
     text-align: center;
+    width: 100%;
+}
+#submitWeather{
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
-table {
-    text-align: center;
+#show{
+    margin: auto;
+    width: 60%;
 }
-
 footer{
-    text-align: center;
+    text-align: end;
+    font-size: 20px;
 }
