@@ -5,15 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <title>Weather Apps</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-
-
-  <title>Weather Apps</title>
 </head>
 
 <body>
@@ -37,9 +34,10 @@
       </div>
       <div id="show"></div>
 
-  
-  
-  
+      <!--show 5 day-->
+    
+
+
       </br>
       <h2>5 Day Forcast</h2>
       <ul style="list-style-type:none">
@@ -53,7 +51,7 @@
     <div class="footer">
       <div class="container">
         <div class="row text-center" style="padding-top:30px;">
-          <p style="color: white; font-size: 20px; font weight: bold;">Have a Great Weather Day &copy; Current WEather
+          <p style="color: white; font-size: 20px; font-weight: bold" ;>Have a Great Weather Day &copy; Current WEather
           </p>
         </div>
 
@@ -64,62 +62,11 @@
     </footer>
 
 
-
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 
-
-    <script type="text/javascript">
-
-
-
-
-
-      $(document).ready(function () {
-        // to request data from openweather.org
-        $('#submitWeather').click(function () {
-
-          var city = $("#city").val();
-          if (city != '') {
-
-            $.ajax({
-
-              url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&appid=de0beaf5a28fc57eed081e333502c625",
-              type: "GET",
-              dataType: "jsonp",
-              success: function (data) {
-                //console.log(data);
-                var widget = show(data);
-
-                $("#show").html(widget);
-
-                $("#city").val();
-              }
-            });
-
-          } else {
-            $("#error").html('Field cannot be empty');
-          }
-        });
-
-      });
-
-      //return data for weather temp, humidity, wind, uv index
-      function show(data) {
-        return "<h2>Current Weather for " + data.name + "," + data.sys.country + "</h2>" +
-
-          "<h3><strong>Weather</strong>: " + data.weather[0].main + "</h3>" +
-          "<h3><strong>Description</strong>: " + data.weather[0].description + "</h3>" +
-          "<h3><strong>Temperature</strong>: " + data.main.temp + "</h3>" +
-          "<h3><strong>Pressure</strong>: " + data.main.pressure + "</h3>" +
-          "<h3><strong>Humidity</strong>: " + data.main.humidity + "</h3>" +
-          "<h3><strong>Min Temperature</strong>: " + data.main.temp_min + "</h3>" +
-          "<h3><strong>Max Temperature</strong>: " + data.main.temp_max + "</h3>" +
-          "<h3><strong>Wind speed</strong>: " + data.wind.speed + "</h3>";
-
-      }
-
-
-    </script>
 
 
 </body>

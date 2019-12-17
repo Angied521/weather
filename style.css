@@ -29,6 +29,6 @@ input[type="text"]{
     width: 60%;
 }
 footer{
-    text-align: end;
-    font-size: 20px;
+    text-align: center;
+    font-size: 100px;
 }
