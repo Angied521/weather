@@ -28,7 +28,11 @@ input[type="text"]{
     margin: auto;
     width: 60%;
 }
-footer{
-    text-align: center;
-    font-size: 100px;
+
+#submitFiveDay{
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+
 }
+
