@@ -1,6 +1,7 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
     
 }
 
@@ -12,23 +13,14 @@ input[type="text"]{
     height:40px;
     font-size: 20px;
 }
-#rowDiv{
-    margin: auto;
-    text-align: center;
-    width: 100%;
-}
+
+
 #submitWeather{
     height: 40px;
     font-size: 20px;
     font-weight: bold;
 
 }
-
-#show{
-    margin: auto;
-    width: 60%;
-}
-
 #submitFiveDay{
     height: 40px;
     font-size: 20px;
@@ -36,3 +28,32 @@ input[type="text"]{
 
 }
 
+.content-box2 {
+    text-align: left;
+    width: 380px;
+    height: 400px;
+    padding: 10px;
+    border: 8px solid blue;
+    background: rgb(68, 182, 202);
+  }
+.content-box{
+    text-align: left;
+    width: 380px;
+    height: 1450px;
+    padding: 10px;
+    border: 8px solid blue;
+    background: rgb(68, 182, 202);
+    margin-bottom: 60px;
+
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    color: blue;
+     text-align: center;
+ }
