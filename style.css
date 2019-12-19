@@ -31,7 +31,7 @@ input[type="text"]{
 .content-box2 {
     text-align: left;
     width: 380px;
-    height: 400px;
+    height: auto;
     padding: 10px;
     border: 8px solid blue;
     background: rgb(68, 182, 202);
@@ -39,7 +39,7 @@ input[type="text"]{
 .content-box{
     text-align: left;
     width: 380px;
-    height: 1450px;
+    height: auto;
     padding: 10px;
     border: 8px solid blue;
     background: rgb(68, 182, 202);
